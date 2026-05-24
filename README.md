@@ -332,7 +332,5 @@ This project is open source. Feel free to modify and distribute.
 
 ---
 
-## Author
 
-Created as a demonstration of N-gram language models.
 
