@@ -28,10 +28,8 @@ def generate_paragraph(model, start_context, length=20, delay=0.25):
 
 if __name__ == "__main__":
     model, tokens = build_model(n=3, smoothing=False)
-
-    if ("what", "is") in model.contexts:
-        start_context = ("the", "pride")
-    else:
+    start_context  = ("the", "pride")
+    if start_context not  in model.contexts:
         start_context = random.choice(list(model.contexts))
 
     generated_words = generate_paragraph(model, start_context, length=10, delay=0.25)
